@@ -19,8 +19,7 @@ public class Solution20 {
         }
 
         Stack<Character> stack = new Stack<>();
-        stack.push(s.charAt(0));
-        for (int i = 1; i < s.length(); i++) {
+        for (int i = 0; i < s.length(); i++) {
             if (stack.isEmpty()) {
                 stack.push(s.charAt(i));
             } else {
