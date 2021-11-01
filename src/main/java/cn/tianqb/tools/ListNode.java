@@ -1,4 +1,4 @@
-package cn.tianqb.leetcode;
+package cn.tianqb.tools;
 
 /**
  * @author tianqingbo3

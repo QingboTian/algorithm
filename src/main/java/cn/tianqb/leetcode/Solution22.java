@@ -1,5 +1,7 @@
 package cn.tianqb.leetcode;
 
+import cn.tianqb.tools.ListNode;
+
 import java.util.StringJoiner;
 
 /**
@@ -16,14 +18,14 @@ import java.util.StringJoiner;
  */
 public class Solution22 {
 
-    public ListNode solution1(ListNode head, int k) {
+    public cn.tianqb.tools.ListNode solution1(cn.tianqb.tools.ListNode head, int k) {
         if (head == null || k < 1) {
             return null;
         }
 
         // 双指针
-        ListNode p1 = head;
-        ListNode p2 = head;
+        cn.tianqb.tools.ListNode p1 = head;
+        cn.tianqb.tools.ListNode p2 = head;
         while(p2 != null) {
             for (int i = 0; i < k && p2 != null; i++) {
                 p2 = p2.next;
@@ -36,14 +38,14 @@ public class Solution22 {
         return p1;
     }
 
-    public ListNode solution2(ListNode head, int k) {
+    public cn.tianqb.tools.ListNode solution2(cn.tianqb.tools.ListNode head, int k) {
         if (head == null || k < 1) {
             return null;
         }
 
         // 双指针
-        ListNode p1 = head;
-        ListNode p2 = head;
+        cn.tianqb.tools.ListNode p1 = head;
+        cn.tianqb.tools.ListNode p2 = head;
         while(p2 != null && k > 0) {
             p2 = p2.next;
             k--;
@@ -56,10 +58,10 @@ public class Solution22 {
     }
 
     public static void main(String[] args) {
-        ListNode head = new ListNode(0);
-        ListNode tail = head;
+        cn.tianqb.tools.ListNode head = new cn.tianqb.tools.ListNode(0);
+        cn.tianqb.tools.ListNode tail = head;
         for (int i = 1; i < 10; i++) {
-            tail.next = new ListNode(i);
+            tail.next = new cn.tianqb.tools.ListNode(i);
             tail = tail.next;
         }
 
