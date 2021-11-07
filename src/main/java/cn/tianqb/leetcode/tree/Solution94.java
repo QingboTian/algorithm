@@ -1,4 +1,4 @@
-package cn.tianqb.leetcode;
+package cn.tianqb.leetcode.tree;
 
 import cn.tianqb.tools.TreeNode;
 
