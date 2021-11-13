@@ -1,4 +1,4 @@
-package cn.tianqb.dp;
+package cn.tianqb.leetcode.dp;
 
 import java.util.HashMap;
 
